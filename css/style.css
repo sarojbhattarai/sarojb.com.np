@@ -1,50 +1,75 @@
 /*CSS*/
 body {
-  background-color: black;
-  background-image: url("../images/saroj4.jpg") ;
-  background-repeat: no-repeat;
-  background-attachment: fixex;
+  color: white;
   margin: 0px;
-  
-  font-family: Helvetica Neue, Helvetica;
-  color: white; }
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif, Helvetica;
+}
+.container {
+  /* min-height: 1000px; */
+  background-color: black;
+}
+.bg-banner {
+  min-height: 1000px;
+  width: 100%;
+  background-image: url("../images/saroj4.jpg");
+  background-repeat: no-repeat;
+  position: relative;
+}
 
-  body a {
-    color: orange;
-    text-decoration: none; }
-    body a:hover {
-      color: yellow; }
+.container a {
+  color: orange;
+  text-decoration: none;
+}
+.container a:hover {
+  color: yellow;
+}
 
-  body .content {  
-   
-    margin: 0 0 0 auto;
-    padding-top: 150px;
-    padding-left: 50px; }
+.content {
+  margin: 0 0 0 auto;
+  padding-top: 150px;
+  padding-left: 50px;
+}
 
-    body .content h1 {	 
-      font-weight: normal;
-      padding: 25px 0 0;
-      margin: 0px;
-      font-size: 5em; }
+.content h1 {
+  font-weight: normal;
+  padding: 25px 0 0;
+  margin: 0px;
+  font-size: 5em;
+}
 
-    body .content p {
-      font-size: 17px;
-      margin: 5px 0 10px 10px;
-      padding: 0px; }
+.content p {
+  font-size: 17px;
+  margin: 5px 0 10px 10px;
+  padding: 0px;
+}
 
-   .button1{
+.button1 {
   background-color: rgb(199, 19, 139);
-  border-color:rgb(128, 0, 43);  
+  border-color: rgb(128, 0, 43);
   height: 60px;
   width: 30%;
 }
 
-.welcome1{
+.welcome1 {
   font-size: 16pt;
   background-color: white;
   text-align: center;
 }
 
-h1{
+h1 {
   color: aqua;
+}
+
+@media (min-width: 768px) {
+  .bg-banner {
+    height: 597px;
+  }
+}
+@media (min-width: 1200px) {
+  .bg-banner {
+    width: 100%;
+    height: 726px;
+  }
 }
