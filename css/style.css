@@ -23,7 +23,7 @@ body {
   text-decoration: none;
 }
 .container a:hover {
-  color: yellow;
+  text-decoration: underline;
 }
 
 .content {
