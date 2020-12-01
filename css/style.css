@@ -19,11 +19,11 @@ body {
 }
 
 .container a {
-  color: orange;
+  color: #4eadf5;
   text-decoration: none;
 }
 .container a:hover {
-  color: yellow;
+  text-decoration: underline;
 }
 
 .content {
@@ -59,9 +59,15 @@ body {
 }
 
 h1 {
-  color: aqua;
+  color: #fff;
 }
 
+.facebook {
+  color: #3B5998;
+}
+.instagram {
+  color: #DD2A7B
+}
 @media (min-width: 768px) {
   .bg-banner {
     height: 597px;
