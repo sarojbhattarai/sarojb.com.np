@@ -1,0 +1,44 @@
+body {
+    background-color: #f8f9fa;
+    font-family: Arial, sans-serif;
+  }
+  
+  .header1class {
+    font-size: 2.5rem;
+    color: #343a40;
+  }
+  
+  p {
+    font-size: 1rem;
+    color: #6c757d;
+  }
+  
+  a {
+    color: #007bff;
+  }
+  
+  .content {
+    padding: 50px 0;
+  }
+  
+  .btn-custom {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+  }
+  
+  .btn-custom:hover {
+    background-color: #0056b3;
+    text-decoration: none;
+    color: white;
+  }
+  
+  .social-btn {
+    margin-right: 10px;
+    font-size: 1rem;
+    text-transform: uppercase;
+    padding: 10px 15px;
+  }
+  
