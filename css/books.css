@@ -1,0 +1,23 @@
+/* Styles for the book list */
+.book-list {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.book {
+    background-color: #f4f4f4;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.book h3 {
+    margin-top: 0;
+    color: #2c3e50;
+}
+
+.book p {
+    margin: 0.5rem 0;
+    color: #555;
+}

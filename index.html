@@ -30,23 +30,54 @@
       </p>
 
       <p>
-        I completed my study in Software Engineering from NCIT College, Balkumari, Lalitpur.
+        I completed my bachelor study in Software Engineering from <a href = "https://ncit.edu.np/">NCIT College</a>, Balkumari, Lalitpur.
       </p>
 
       <p>
-        I completed my Post Graduate in Artificial Intelligence Analysis, Design and Implementation from Durham College, Oshawa.
+        I completed my Post Graduate in Artificial Intelligence Analysis, Design and Implementation from <a href="https://durhamcollege.ca/">Durham College</a>, Oshawa.
+      </p>
+      <p>
+        I completed my Post Graduate in Business Analytics from <a href ="https://www.senecapolytechnic.ca/home.html">Seneca College</a> , Markham.
       </p>
 
       <p>
         You can read my <a href="https://blog.sarojb.com.np/" target="_blank">Blogs</a> here.
       </p>
 
+       <!-- Section for dynamic book list -->
+       <div id="my-books" class="mt-5 p-4">
+        <h2 class="header text-center">My Favorite Books</h2>
+        <p class="text-center">Click the button below to see my favorite books!</p>
+
+        <!-- Button to trigger loading of books -->
+        <div class="text-center">
+            <button id="toggle-books" class="btn btn-primary">Show Books</button>
+        </div>
+
+        <!-- Dynamic Book List -->
+        <div id="book-list" class="book-list mt-4" style="display: none;"></div>
+    </div>
+</div>
+
+<!-- Script to load books from books.js -->
+<script src="js/books.js"></script>
+<script>
+    // Add event listener to the button to load books on click
+    document.getElementById('load-books').addEventListener('click', function () {
+        displayBooks();  // Call the function to load books from books.js
+    });
+</script>
+</body>
+
+
+
       <div class="mt-4">
         <h5>Find me on</h5>
         <!-- Social Media Icons -->
-        <a href="https://www.facebook.com/profile.php?id=100088347734456&mibextid=ZbWKwL" target="_blank" class="social-btn"><i class="fab fa-facebook-f"></i></a>
-        <a href="https://twitter.com/__saroj__" target="_blank" class="social-btn"><i class="fab fa-twitter"></i></a>
+    
         <a href="https://github.com/sarojbhattarai" target="_blank" class="social-btn"><i class="fab fa-github"></i></a>
+        <a href="https://twitter.com/__saroj__" target="_blank" class="social-btn"><i class="fab fa-twitter"></i></a>
+        <a href="https://www.linkedin.com/in/saroj-bhattarai-07625a233/" target="_blank" class="social-btn"><i class="fab fa-linkedin"></i></a>
       </div>
     </div>
   </div>
