@@ -1,54 +1,82 @@
-/* Global Styles */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Lato:wght@300;400;700&display=swap');
+
+:root {
+  --bg:         #faf6ef;
+  --border:     #d9cdb6;
+  --text:       #2c2416;
+  --text-muted: #6b5540;
+  --accent:     #8b6914;
+}
+
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
 body {
-    font-family: 'Helvetica Neue', Arial, sans-serif;
-    background-color: #f7f7f7;
-    color: #333;
+  background-color: var(--bg);
+  color: var(--text);
+  font-family: 'Lato', Arial, sans-serif;
+  font-size: 1rem;
+  line-height: 1.85;
+  min-height: 100vh;
 }
 
-.container {
-    max-width: 800px;
-    margin: 0 auto;
+.page-wrap {
+  max-width: 680px;
+  margin: 0 auto;
+  padding: 4rem 2rem 6rem;
+  animation: fadeUp 0.6s ease both;
 }
 
-.welcome-box {
-    background-color: white;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    border-radius: 10px;
+.back-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-size: 0.73rem;
+  font-weight: 700;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--text-muted);
+  text-decoration: none;
+  margin-bottom: 3rem;
+  transition: color 0.2s;
+}
+.back-link:hover { color: var(--accent); }
+
+.page-title {
+  font-family: 'Playfair Display', Georgia, serif;
+  font-size: clamp(1.8rem, 5vw, 2.6rem);
+  font-weight: 700;
+  color: var(--text);
+  margin-bottom: 0.5rem;
+  line-height: 1.2;
 }
 
-.header {
-    font-size: 2.5rem;
-    font-weight: bold;
-    color: #2c3e50;
+.title-rule {
+  width: 40px;
+  height: 2px;
+  background: var(--accent);
+  border: none;
+  margin-bottom: 2.2rem;
 }
 
-p {
-    font-size: 1.1rem;
-    line-height: 1.6;
-    color: #555;
+.prose p {
+  font-size: 1rem;
+  color: var(--text-muted);
+  margin-bottom: 1.1rem;
 }
 
-p strong {
-    color: #e74c3c;
+.prose p strong { color: var(--text); font-weight: 700; }
+
+.highlight {
+  font-family: 'Playfair Display', Georgia, serif;
+  font-style: italic;
+  font-size: 1.25rem;
+  color: var(--text);
+  display: block;
+  text-align: center;
+  margin: 2.2rem 0;
 }
 
-.text-center {
-    text-align: center;
-}
-
-.mt-4 {
-    margin-top: 1.5rem;
-}
-
-.mt-5 {
-    margin-top: 3rem;
-}
-
-p a {
-    color: #3498db;
-    text-decoration: none;
-}
-
-p a:hover {
-    text-decoration: underline;
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(14px); }
+  to   { opacity: 1; transform: translateY(0);    }
 }
